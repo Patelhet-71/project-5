@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+    font-family: Georgia, "Times New Roman", Times, serif;
+    heading 
+    font-family: Verdana, Geneva, sans-serif;
+    a input p textarea  */
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p,a,small,i{
+    font-family: Verdana, Geneva, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    position: fixed;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    background-color: #1E1E1E;
+    color: white;
+    z-index: 1000;
+}
+.logo{
+    letter-spacing: 4px;
+    margin-left: 80px;
+    font-size: 16px;
+}
+.logo span{
+    font-size: 40px;
+    font-weight: 600;
+    color: #97BDAB;
+}
+nav ul{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-right: 80px;
+}
+
+nav ul li{
+    margin: 0px 15px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+}
+
+/* ------------------------- Contaoiner-1 ------------------------ */
+.container-1{
+    position: relative;
+    top: 10vh;
+    width: 100%;
+    height: 95vh;
+    background-image: url(/images/01.png);
+    z-index: 1;
+}
+.container-1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    background-color: rgba(40,46,57,.7);
+}
+.container-1 div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-1 div h3{
+    font-size: 56px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.5;
+    color: white;
+
+}
+.container-1 div p{
+    font-size:20px;
+    width: 35%;
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+
+}
+.container-1 div a{
+    font-size:18px;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #97A9BD;
+    border: 2px solid #97A9BD;
+    color: white;
+    margin-top: 25px;
+    padding: 10px 50px;
+}
+.container-1 div a:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}
+/* ------------------------- Contaoiner-2 ------------------------ */
+
+.container-2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10vh;
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+    padding: 80px 0;
+    margin: 0 5%;
+}
+
+/* ------------------------- Contaoiner-2 ITEM -1------------------------ */
+ 
+.container-2 .item-1{
+    margin-top: -160px;
+    z-index: 1;
+    margin-bottom: 130px;
+}
+
+.container-2 .item-1 ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.container-2 .item-1 ul li{
+    display: flex;
+    align-items: center;
+    justify-content:center;   
+}
+
+.container-2 .item-1 ul li:nth-child(2) article{
+    background-color:#A197BD;
+}
+
+.container-2 .item-1 ul li:nth-child(3) article{
+    background-color:#BDA697;
+}
+.container-2 .item-1 ul li:nth-child(4) article{
+    background-color:#97BDAB;
+}
+
+.container-2 .item-1 ul li article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    background-color: #97A9BD;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    width: 85%;
+    padding: 30px 15px;
+}
+.container-2 .item-1 ul li article a{
+    /* padding: 15px; */
+    display: flex;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.container-2 .item-1 ul li article a i{
+    background-color:white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: red;   
+}
+
+.container-2 .item-1 ul li:nth-child(1) article a i{
+    color: #97A9BD;
+}
+
+.container-2 .item-1 ul li:nth-child(2) article a i{
+    color: #A197BD;
+}
+.container-2 .item-1 ul li:nth-child(3) article a i{
+    color: #BDA697;
+}
+.container-2 .item-1 ul li:nth-child(4) article a i{
+    color: #97BDAB;
+}
+
+.container-2 .item-1 ul li article h6{
+    font-size:18px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+}
+
+.container-2 .item-1 ul li article p{
+    color: white;
+}
+
+/* ------------------------- Contaoiner-2 ITEM -2------------------------ */
+
+.container-2 .item-2{
+    display: flex;
+    width: 96%;
+    align-items: center;
+    padding-bottom: 7%;
+    justify-content: space-between;
+    /* margin-bottom: 100px; */
+}
+.container-2 .item-2 .item-2-left,
+.container-2 .item-2 .item-2-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.container-2 .item-2 figcaption{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    padding: 0 12px ;
+    align-items: center;
+    justify-content:space-between;
+    border: 2px solid rgb(201, 201, 201);
+    border-width: 0px 1px 1px 1px;
+}
+.container-2 .item-2 figcaption a{
+    font-size:22px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    
+}
+.container-2 .item-2 figcaption i{
+    font-size: 22px;
+    background-color: #97A9BD;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    padding-left: 2px;
+    padding-top: 2px;
+
+}
+/* ------------------------- Contaoiner-3 ------------------------ */
+.container-3{
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    background-image: url(/images/01.png);
+    z-index: 1;
+    padding: 5% 0;
+}
+
+.container-3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    background-color: #97a9bdc1;
+}
+.container-3 .upper-item {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    color: white;
+    margin-bottom: 5%;
+}
+.container-3 .upper-item p{
+    font-size:15px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.container-3 .upper-item h4{
+    font-size:30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height:1.8;
+}
+
+.container-3 .lower-item{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+}
+.container-3 .lower-item ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.container-3 .lower-item ul li{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    margin: 20px 0;
+}
+.container-3 .lower-item ul li article{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px 15px;
+    box-shadow: 0px 0px 20px 0px rgb(97, 97, 97);
+}
+
+.container-3 .lower-item ul li article a{
+    display: flex;
+    text-align: center;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-3 .lower-item ul li article a i{
+    background-color: #97a9bd;
+    width: 60px;
+    height: 60px;
+    line-height:60px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    color: white;
+}
+.container-3 .lower-item ul li article h6{
+    font-size:18px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    opacity: 70%;
+}
+.container-3 .lower-item ul li article p{
+    color: black;
+    opacity: 70%;
+}
+
+/* ------------------------- Contaoiner-4 ------------------------ */
+
+.container-4{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #97A9BD;
+    margin-top: 5%;
+    padding: 7% 0;
+    align-items: center;
+    justify-content: center;
+}
+.container-4 .feedback-title{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.container-4 .feedback-title p{
+    font-size:15px;
+    font-family: Verdana, Geneva, sans-serif;
+    
+}
+.container-4 .feedback-title h5{
+    font-size:30px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container-4 .feedback{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.container-4 .feedback .left-feedback,
+.container-4 .feedback .right-feedback {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content:center;
+    margin: 20px;
+}
+.container-4 .feedback .upper-feedback {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.container-4 .feedback .upper-feedback img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.container-4 .feedback .upper-feedback .name{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.container-4 .feedback .upper-feedback .name h5{
+    font-size:20px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    line-height: 0.5;
+    font-family: Georgia,
+}
+.container-4 .feedback .upper-feedback .name small{
+    font-size: 12px;
+}
+.container-4 .feedback .lower-feedback {
+    display: flex;
+    margin-top: 5%;
+    background-color:white;
+    color: black;
+    padding: 20px 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius:30px ;
+}
+
+.container-4 .feedback .lower-feedback i{
+    display: flex;
+    opacity: 12%;
+    color: black;
+    width: 1%;
+    margin-top: -10px;
+    font-size: 30px;
+    text-align:left;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.container-4 .feedback .lower-feedback p{
+    font-size:14px;
+    text-align: center;
+    opacity: 85%;
+}
+
+
+
+
+
+
